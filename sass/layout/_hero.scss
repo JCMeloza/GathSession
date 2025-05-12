@@ -1,0 +1,96 @@
+@use "../abstracts/variables" as *;
+section {
+  max-height: 100vh;
+}
+.hero {
+  display: flex;
+  min-width: $size-screen-min;
+  &__content {
+    min-width: 600px;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    font-family: $font-primary;
+    font-weight: 600;
+    font-size: 90px;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 104px;
+  }
+
+  &__subtitle {
+    color: #ffffff50;
+    font-family: $font-secundary;
+    font-size: 1.7rem;
+  }
+
+  &__buttons {
+    min-width: 400px;
+    margin-top: 32px;
+    display: flex;
+    gap: 32px;
+    margin-bottom: 89px;
+  }
+
+  &__features {
+    display: flex;
+    gap: 45px;
+  }
+
+  .feature {
+    display: flex;
+    align-items: center;
+
+    &__icon {
+      background-color: #ffffff50;
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__text {
+      color: white;
+      font-family: $font-secundary;
+      margin-left: 15px;
+      font-weight: 600;
+      font-size: 15px;
+    }
+  }
+  &__visuals{
+    min-width: 600px;
+    max-width: 50%;
+    margin-left: 27px;
+    
+  }
+  &__gallery{
+    display:flex;
+    gap: 20px;
+
+    &-img-man-black{
+        background-color: #6E1FED;
+        background-image: url("../img/handsome-serious.png");
+        height: 450px;
+        width: 230px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 80px;
+
+    }
+    &-img-girl-think{
+        background-color: #db2a6b;
+        background-image: url("../img/young-european.png");
+        height: 240px;
+        width: 240px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 80px;
+
+    }
+  }
+}

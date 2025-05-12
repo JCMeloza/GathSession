@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 134px;
+  &__logo {
+    flex-shrink: 0;
+  }
+
+  &__logo-img {
+    width: 230px;
+    height: auto;
+  }
+}
