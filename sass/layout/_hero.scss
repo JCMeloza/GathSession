@@ -1,20 +1,52 @@
 @use "../abstracts/variables" as *;
 section {
   max-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
 }
 .hero {
   display: flex;
   min-width: $size-screen-min;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    background: url("../img/ellipse.svg") no-repeat center/contain;
+    z-index: -1;
+  }
+
+  &::before {
+    width: 100%;
+    height: 99%;
+    top: 10%;
+    left: 27%;
+    opacity: 0.7;
+  }
+
+  &::after {
+    width: 180%;
+    height: 180%;
+    top: 40%;
+    right: -80%;
+    transform: rotate(15deg);
+    opacity: 0.5;
+  }
+
   &__content {
     min-width: 600px;
-    max-width: 50%;
+    max-width: 47%;
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
   }
   &__title {
     font-family: $font-primary;
     font-weight: 600;
-    font-size: 90px;
+    font-size: 94px;
     color: white;
     margin-bottom: 20px;
     line-height: 104px;
@@ -23,7 +55,7 @@ section {
   &__subtitle {
     color: #ffffff50;
     font-family: $font-secundary;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
   }
 
   &__buttons {
@@ -62,14 +94,20 @@ section {
   }
   &__visuals{
     min-width: 600px;
-    max-width: 50%;
+    max-width: 60%;
+    width: 60%;
     margin-left: 27px;
-    
+    position: relative;
+    height: 100%;
+    overflow: hidden;
   }
   &__gallery{
+    min-width: 600px;
     display:flex;
     gap: 20px;
-
+    z-index: 1;
+    position: relative;
+    
     &-img-man-black{
         background-color: #6E1FED;
         background-image: url("../img/handsome-serious.png");
@@ -79,6 +117,7 @@ section {
         background-position: center;
         background-size: cover;
         border-radius: 80px;
+        margin-bottom: 32px;
 
     }
     &-img-girl-think{
@@ -92,5 +131,40 @@ section {
         border-radius: 80px;
 
     }
+    &-img-asian-girl{
+      background-color: #60D3D9;
+      background-image: url("../img/pretty-young-asian.png");
+      height: 240px;
+      width: 240px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border-radius: 80px;
+
+  }
+  &-img-european-man{
+    background-color: #FF7E29;
+    background-image: url("../img/positive-smiling.png");
+    height: 450px;
+    width: 230px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 80px;
+    margin-top: 32px;
+
+}
+&-img-african-girl{
+  background-color: #F4B840;
+  background-image: url("../img/positive-dark-skinned-woman.png");
+  height: 450px;
+  width: 230px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  border-radius: 80px;
+  margin-top: 135px;
+
+}
   }
 }

@@ -1,7 +1,8 @@
 @use "../abstracts/abstracts" as *;
 
-
-
 body {
-  overflow-x: hidden;
+  overflow: hidden;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
