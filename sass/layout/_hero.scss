@@ -13,7 +13,7 @@ section {
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     background: url("../img/ellipse.svg") no-repeat center/contain;
     z-index: -1;
@@ -28,12 +28,12 @@ section {
   }
 
   &::after {
-    width: 180%;
-    height: 180%;
+    width: 107%;
+    height: 65%;
     top: 40%;
-    right: -80%;
+    right: -36%;
     transform: rotate(15deg);
-    opacity: 0.5;
+    opacity: 0.7;
   }
 
   &__content {
@@ -64,6 +64,24 @@ section {
     display: flex;
     gap: 32px;
     margin-bottom: 89px;
+    align-items: center;
+
+    .button-link {
+      font-family: $font-secundary;
+      color: white;
+      text-decoration: underline;
+      &:hover {
+        color: $color-button;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        background: url("../img/arrow.svg") no-repeat center/contain;
+        width: 56px;
+        height: 47px;
+        top: 61%;
+      }
+    }
   }
 
   &__features {
@@ -92,7 +110,7 @@ section {
       font-size: 15px;
     }
   }
-  &__visuals{
+  &__visuals {
     min-width: 600px;
     max-width: 60%;
     width: 60%;
@@ -101,38 +119,36 @@ section {
     height: 100%;
     overflow: hidden;
   }
-  &__gallery{
+  &__gallery {
     min-width: 600px;
-    display:flex;
+    display: flex;
     gap: 20px;
     z-index: 1;
     position: relative;
-    
-    &-img-man-black{
-        background-color: #6E1FED;
-        background-image: url("../img/handsome-serious.png");
-        height: 450px;
-        width: 230px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        border-radius: 80px;
-        margin-bottom: 32px;
 
+    &-img-man-black {
+      background-color: #6e1fed;
+      background-image: url("../img/handsome-serious.png");
+      height: 450px;
+      width: 230px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border-radius: 80px;
+      margin-bottom: 32px;
     }
-    &-img-girl-think{
-        background-color: #db2a6b;
-        background-image: url("../img/young-european.png");
-        height: 240px;
-        width: 240px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        border-radius: 80px;
-
+    &-img-girl-think {
+      background-color: #db2a6b;
+      background-image: url("../img/young-european.png");
+      height: 240px;
+      width: 240px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border-radius: 80px;
     }
-    &-img-asian-girl{
-      background-color: #60D3D9;
+    &-img-asian-girl {
+      background-color: #60d3d9;
       background-image: url("../img/pretty-young-asian.png");
       height: 240px;
       width: 240px;
@@ -140,31 +156,28 @@ section {
       background-position: center;
       background-size: cover;
       border-radius: 80px;
-
-  }
-  &-img-european-man{
-    background-color: #FF7E29;
-    background-image: url("../img/positive-smiling.png");
-    height: 450px;
-    width: 230px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 80px;
-    margin-top: 32px;
-
-}
-&-img-african-girl{
-  background-color: #F4B840;
-  background-image: url("../img/positive-dark-skinned-woman.png");
-  height: 450px;
-  width: 230px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size:cover;
-  border-radius: 80px;
-  margin-top: 135px;
-
-}
+    }
+    &-img-european-man {
+      background-color: #ff7e29;
+      background-image: url("../img/positive-smiling.png");
+      height: 450px;
+      width: 230px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border-radius: 80px;
+      margin-top: 32px;
+    }
+    &-img-african-girl {
+      background-color: #f4b840;
+      background-image: url("../img/positive-dark-skinned-woman.png");
+      height: 450px;
+      width: 230px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border-radius: 80px;
+      margin-top: 135px;
+    }
   }
 }
