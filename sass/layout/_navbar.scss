@@ -16,5 +16,21 @@
     &__link {
         text-decoration: none;
         color: $color-grey-white;
+        font-weight: 300;
+        
+        &:hover {
+            color: white;
+            position: relative;
+            &::before{
+                content:'';
+                position: absolute;
+                height: 2px;
+                width: 80%;
+                bottom: -10px;
+                left: 10%;
+                background-color: $color-button;
+
+            }
+        }
     }
 }
