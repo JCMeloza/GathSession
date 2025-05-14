@@ -43,7 +43,7 @@ Para una experiencia visual óptima, por favor visualiza el proyecto en la resol
 ## 🚀 Instalación y Uso
 1. Clona este repositorio
 ```bash
-git clone [URL del repositorio]
+git clone [https://github.com/JCMeloza/GathSession.git]
 ```
 2. Instala las dependencias
 ```bash
