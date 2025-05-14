@@ -2,6 +2,10 @@
 
 Este proyecto es una maquetación web que simula una red social moderna llamada GathSession. Se ha desarrollado utilizando HTML y SCSS, con una estructura modular y bien organizada.
 
+# Para ver el proyecto con GitHub pages:
+
+https://jcmeloza.github.io/GathSession/
+
 ## ⚠️ Importante: Resolución Específica
 **Este proyecto NO es responsive y está optimizado exclusivamente para una resolución de:**
 - **Ancho:** 1920 píxeles
